@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Department</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></head>
+  <body>
+    <header class="header">
+      <h1><a href="./index.html"></a>Tren del Nordeste</h1>
+      <nav class="department">
+        <p class="button_department" id="cundinamarca">Cundinamarca</p>
+        <p class="button_department" id="boyaca">Boyacá</p>
+      </nav>
+    </header>
+    <sidebar id="nav-bar">
+        <input type="checkbox" id="nav-toggle">
+        <div id="nav-header">
+            <a id="nav-title" href="./index.html" target="_blank">
+                <i class="fab fa-codepen"></i>Ecotrails
+            </a>
+            <label for="nav-toggle">
+                <span id="nav-toggle-burger"></span>
+            </label>
+            <hr>
+        </div>
+        <div id="nav-content">
+            <div class="nav-button" onclick="window.open('./Maps.html', '_blank');"><i class="fas fa-palette"></i><span>Mapas</span></div>
+            <div class="nav-button"><i class="fas fa-images"></i><span>Planes</span></div>
+            <div class="nav-button"><i class="fas fa-thumbtack"></i><span>Municipios</span></div>
+            <hr>
+            <div class="nav-button" onclick="window.open('./Department.html', '_blank');"><i class="fas fa-heart"></i><span>Departamento</span></div>
+            <div class="nav-button nav-button-department"><i class="fas fa-fire"></i><span>Boyacá</span></div>
+            <div class="nav-button nav-button-department"><i class="fas fa-magic"></i><span>Cundinamarca</span></div>
+            <hr>
+            <div id="nav-content-highlight"></div>
+        </div>
+        
+        <input type="checkbox" id="nav-footer-toggle">
+        <div id="nav-footer">
+            <div id="nav-footer-heading">
+                <div id="nav-footer-titlebox" >
+                    <a id="nav-footer-title" href="./index.html" target="_blank">Inicio</a>
+                </div>
+                <label for="nav-footer-toggle">
+                </label>
+            </div>
+        </div>
+    </sidebar>
+    <main>
+      <h2 class="title_department">
+        Vias ferreas, deforestación y planes de turismo
+      </h2>
+      <!-- <section class="chart">
+        <canvas id="myChart"></canvas>
+      </section> -->
+      <div class="main-info">
+        <section class="stats">
+          <ul class="stats_department">
+            <li class="stats_item">
+              Vias Totales
+              <p class="stats_number">200 KM</p>
+            </li>
+            <li class="stats_item">
+              Vias Activas
+              <p class="stats_number">80 KM</p>
+            </li>
+            <li class="stats_item">
+              Areas Deforestadas
+              <p class="stats_number">120 Ha</p>
+            </li>
+            <li class="stats_item">
+              Planes Turisticos
+              <p class="stats_number">3</p>
+            </li>
+          </ul>
+        </section>
+        <section class="recommendation">
+          <h3>Beneficios del uso del tren para evitar la deforestación</h3>
+          <p>
+            Disminución de la congestión del tráfico: El transporte ferroviario
+            puede ayudar a reducir la congestión del tráfico, lo que puede
+            llevar a una menor deforestación. Esto se debe a que los trenes
+            pueden transportar más personas y mercancías que los automóviles, lo
+            que significa que se necesitan menos automóviles en la carretera.
+          </p>
+        </section>
+      </div>
+      <h2 class="gallery_title">Elige un plan turistico en Cundinamarca</h2>
+      <section class="card-group">
+        <div class="card">
+          <img
+            src="./src/QuebradaHonda-Tocancipa.jpeg"
+            alt="Quebrada Honda - Tocancipá"
+          />
+          <div class="layer"></div>
+          <div class="info">
+          <h3>Tocancipá</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perferendis, dolores. Reprehenderit ullam neque nulla, distinctio
+            excepturi architecto ea, tempore dolorum atque temporibus molestiae.
+            Accusantium, minima! Omnis quo reiciendis rem repellendus?
+          </p>
+          <button class="card-button">Explorar</button>
+        </div>
+        </div>
+        <div class="card">
+            <img
+              src="./src/Sisga-choconta.jpeg"
+              alt="Represa del sisga - Chocontá"
+            />
+            <div class="layer"></div>
+            <div class="info">
+            <h3>Chocontá</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Perferendis, dolores. Reprehenderit ullam neque nulla, distinctio
+              excepturi architecto ea, tempore dolorum atque temporibus molestiae.
+              Accusantium, minima! Omnis quo reiciendis rem repellendus?
+            </p>
+            <button class="card-button">Explorar</button>
+          </div>
+          </div>
+          <div class="card">
+            <img
+              src="./src/Trekking-Villapinzon.jpg"
+              alt="Páramo Villapinzón"
+            />
+            <div class="layer"></div>
+            <div class="info">
+            <h3>Villapinzón</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Perferendis, dolores. Reprehenderit ullam neque nulla, distinctio
+              excepturi architecto ea, tempore dolorum atque temporibus molestiae.
+              Accusantium, minima! Omnis quo reiciendis rem repellendus?
+            </p>
+            <button class="card-button">Explorar</button>
+          </div>
+          </div>
+      </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 EcoTrails</p>
+      </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="Department.js"></script>
+  <script src="Sidebar.js"></script>
+</html>

@@ -8,7 +8,7 @@ let currentIndex = 0;
 function showOptions() {
     optionContainers.forEach((container, index) => {
         if (index >= currentIndex && index < currentIndex + optionsToShow) {
-            container.style.display = 'block';
+            container.style.display = 'flex';
         } else {
             container.style.display = 'none';
         }
