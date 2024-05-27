@@ -13,3 +13,27 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });a
 });
+
+var departmentOptionCundinamarca = document.querySelector('#department-dropdown .nav-button-department:nth-of-type(1)');
+var departmentOptionBoyaca = document.querySelector('#department-dropdown .nav-button-department:nth-of-type(2)');
+
+var departmentOptionsContainer = document.getElementById('department-dropdown');
+var navContentHighlight = document.getElementById('nav-content-highlight');
+
+function hideHighlight() {
+  navContentHighlight.style.display = 'none';
+}
+
+departmentOptionCundinamarca.addEventListener('mouseover', function() {
+  navContentHighlight.style.top = 'calc((5 - 1) * 54px + 16px)';
+});
+
+departmentOptionBoyaca.addEventListener('mouseover', function() {
+  navContentHighlight.style.top = 'calc((6 - 1) * 54px + 16px)';
+});
+
+
+
+
+
+
